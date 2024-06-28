@@ -12,6 +12,10 @@ Some Features:
 ### Build the app
 
 ```shell
+npm install
+```
+
+```shell
 npm run build
 ```
 
