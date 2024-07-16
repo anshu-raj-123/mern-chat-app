@@ -2,6 +2,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useAuthContext } from "../context/AuthContext";
 
+
 const useAuthenticate = () => {
     const [isLoading, setIsLoading] = useState(false);
     const { updateAuthUser } = useAuthContext();
@@ -32,7 +33,9 @@ const useAuthenticate = () => {
 
     return { isLoading, authenticate };
 };
+
 export default useAuthenticate;
+
 
 const validateInput = (user, pass) => {
     if (!user || !pass) {
